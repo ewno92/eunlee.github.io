@@ -1,0 +1,259 @@
+:root {
+  --color-yellow: #efc142;
+  --color-background: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background: white;
+}
+.logo-content {
+  height: 80px;
+  text-align: center;
+  animation: nav-load 0.7s ease-in;
+  /* animation: fade-out 1s; */
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+    /* opacity: 100%; */
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    background: blacks;
+  }
+}
+.logo-content .logo-title {
+  font-family: "Raleway", sans-serif;
+  /* font-size: 1.6rem; */
+  font-size: 3.2rem;
+  color: var(--color-yellow);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.logo-content .name {
+  position: absolute;
+}
+
+/* mobile menu */
+.menuicon-wrap {
+  position: absolute;
+  right: 0;
+  margin: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 35px;
+  display: none;
+  /* padding: 5px; */
+  /* background: gray; */
+}
+nav input[id="menuicon"] {
+  display: none;
+}
+nav input[id="menuicon"] + label {
+  display: block;
+  width: 35px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+nav input[id="menuicon"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+input[id="menuicon"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="menuicon"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+  width: 300px;
+  height: 100%;
+  background: #222;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  transition: all 0.2s;
+}
+input[id="menuicon"]:checked + label + div {
+  right: 0;
+}
+
+/* body */
+
+section {
+  padding-top: 150px;
+  width: 100%;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(odd) {
+  background: var(--color-background);
+}
+
+section::before {
+  content: attr(data-text);
+  color: #262626;
+  font-size: 8em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul {
+  width: 100%;
+  background: gray;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+  top: 0;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+  color: white;
+  transition: 0.5s;
+  width: auto;
+  /* padding: 0 10%; */
+  /* width: 100%; */
+}
+nav ul li a {
+  color: #fff;
+  line-height: 50px;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+nav ul:hover li {
+  filter: blur(2px);
+}
+nav ul li:hover {
+  filter: none;
+}
+
+/* home */
+#home img {
+  width: 100%;
+}
+.main-laptop {
+  width: 45%;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  /* opacity: 0; */
+  z-index: 0;
+  animation: laptop-animation 2s ease-out;
+}
+
+@keyframes laptop-animation {
+  0% {
+    transform: translatex(30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.main-tablet {
+  width: 15%;
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  animation: tablet-animation 2s ease-out;
+}
+@keyframes tablet-animation {
+  0% {
+    transform: translatex(-30%);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.main-phone {
+  width: 8%;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  animation: phone-animation 2s ease-out;
+}
+
+@keyframes phone-animation {
+  0% {
+    transform: translateY(30%);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    background: blacks;
+  }
+}
+
+@media (max-width: 580px) {
+  .menuicon-wrap {
+    display: block;
+  }
+  .logo-content .logo-title {
+    font-size: 1.6rem;
+  }
+}
