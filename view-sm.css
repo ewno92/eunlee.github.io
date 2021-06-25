@@ -1,0 +1,85 @@
+@media (max-width: 540px) {
+  .menuicon-wrap {
+    display: flex;
+    /* display: absolute; */
+    margin: 0;
+    top: 25px;
+    right: 0;
+  }
+  nav input[id="menuicon"] {
+    display: none;
+  }
+  nav input[id="menuicon"] + label {
+    display: block;
+    width: 21px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  nav input[id="menuicon"] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: var(--color-gray);
+    transition: all 0.3s;
+    z-index: 2;
+  }
+  .logo-content .logo-title {
+    font-size: 25px;
+  }
+  nav {
+    height: 60px;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .menuicon-wrap {
+    width: 30px;
+    height: 25px;
+  }
+
+  #home {
+    flex-direction: column;
+    /* padding: 50px 0 0 0; */
+  }
+
+  #home .img-container {
+    background: gray;
+    width: 280px;
+    /* top: 150px; */
+    height: 240px;
+    /* background-color: gray; */
+    /* display: none; */
+  }
+  .main-laptop {
+    width: 250px;
+    /* top: 0px; */
+  }
+  .main-tablet {
+    width: 90px;
+    top: -70px;
+    left: 15px;
+  }
+  .main-phone {
+    width: 60px;
+    top: -170px;
+    left: 70px;
+  }
+  #home .home-title {
+    margin-top: 15px;
+    /* display: flex; */
+    /* align-items: center; */
+  }
+  .btn-portfolio {
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+  }
+  #home .home-title ul li {
+    font-size: 20px;
+  }
+}

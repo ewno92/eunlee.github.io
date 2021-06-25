@@ -22,6 +22,7 @@ nav {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  /* border-top: var(--color-yellow) 2px solid; */
   border-bottom: var(--color-yellow) 2px solid;
 }
 .logo-content {
@@ -43,7 +44,7 @@ nav {
   100% {
     transform: translateY(0);
     opacity: 1;
-    background: blacks;
+    /* background: blacks; */
   }
 }
 .logo-content .logo-title {
@@ -54,9 +55,9 @@ nav {
   text-transform: uppercase;
   font-weight: 900;
 }
-.logo-content .name {
+/* .logo-content .name {
   position: absolute;
-}
+} */
 
 /* mobile menu */
 .menuicon-wrap {
@@ -126,8 +127,6 @@ nav .nav-menu ul li a {
   align-items: center;
   justify-content: center;
   color: rgba(0, 0, 0, 0.5);
-  /* line-height: 50px; */
-  /* box-sizing: border-box; */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -170,11 +169,11 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
 
 div[class="sidebar"] {
   width: 100%;
-  height: 400px;
-  background: #f1f1f1;
+  height: 300px;
+  background-color: rgba(241, 241, 241, 0.9);
   position: fixed;
   top: 60px;
-  right: -600px;
+  right: -800px;
   z-index: 1;
   border-bottom: var(--color-yellow) solid 2px;
   transition: all 0.2s;
@@ -183,16 +182,43 @@ input[id="menuicon"]:checked + label + div {
   right: 0;
 }
 
+nav .sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+nav .sidebar ul li {
+  width: 100%;
+  height: 100%;
+}
+nav .sidebar ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: none;
+  font-weight: 600;
+}
+nav .sidebar ul li a:hover {
+  color: var(--color-yellow);
+}
 /* body */
 
 section {
-  /* padding: 0 15px 0 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: 100%;
   height: 100vh;
-  /* max-width: 1800px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  padding: 0 10px 0 10px;
 }
 section:nth-child(even) {
   background: var(--color-background);
@@ -208,7 +234,9 @@ section::before {
 
 /* home */
 #home {
-  display: flex;
+  /* display: flex; */
+  padding: 30px 0 0 0;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -219,7 +247,7 @@ section::before {
 }
 
 #home .img-container {
-  background: black;
+  /* background: black; */
   /* width: 60%; */
   /* width: 500px; */
   height: 400px;
@@ -316,7 +344,7 @@ section::before {
   /* position: absolute; */
   /* margin: 0 0 0 30%; */
   color: black;
-  background: yellow;
+  /* background: yellow; */
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -338,6 +366,8 @@ section::before {
   color: rgba(150, 150, 150, 0.7);
   font-size: 18px;
   font-weight: 600;
+  align-self: center;
+  margin-top: 20px;
 }
 .btn-portfolio:hover {
   background: rgba(150, 150, 150, 0.7);
@@ -345,72 +375,4 @@ section::before {
   border: rgba(150, 150, 150, 0.7) 5px solid;
 
   color: white;
-}
-
-@media (max-width: 580px) {
-  .menuicon-wrap {
-    display: block;
-  }
-  .logo-content .logo-title {
-    font-size: 2rem;
-  }
-  nav {
-    height: 60px;
-  }
-  .nav-menu {
-    display: none;
-  }
-  nav .sidebar ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-
-  nav .sidebar ul li {
-    width: 100%;
-
-    list-style: none;
-    background: black;
-    height: 100%;
-  }
-  nav .sidebar ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-  }
-  nav .sidebar ul li a:hover {
-    color: white;
-    background: gray;
-    border-bottom: white 1px solid;
-  }
-
-  #home {
-    flex-direction: column;
-    padding: 50px 0 0 0;
-  }
-  .main-laptop {
-    width: 450px;
-  }
-  .main-tablet {
-    width: 180px;
-  }
-  .main-phone {
-    width: 110px;
-    top: -300px;
-    left: 100px;
-  }
-  .home-title {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-  }
-  .btn-portfolio {
-    margin-top: 30px;
-  }
 }
