@@ -1,7 +1,6 @@
 :root {
   --color-yellow: #efc142;
   --color-gray: #aaaaaa;
-
   --color-background: #f7f7f7;
 }
 * {
@@ -11,6 +10,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
 }
 nav {
   position: fixed;
@@ -53,6 +53,7 @@ nav {
   font-size: 3.2rem;
   color: var(--color-yellow);
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 900;
 }
 /* .logo-content .name {
@@ -169,13 +170,13 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
 
 div[class="sidebar"] {
   width: 100%;
-  height: 300px;
-  background-color: rgba(241, 241, 241, 0.9);
+  height: 250px;
+  background-color: rgba(241, 241, 241, 0.93);
   position: fixed;
-  top: 60px;
+  top: 58px;
   right: -800px;
   z-index: 1;
-  border-bottom: var(--color-yellow) solid 2px;
+  border: var(--color-yellow) solid 2px;
   transition: all 0.2s;
 }
 input[id="menuicon"]:checked + label + div {
@@ -217,8 +218,8 @@ section {
   justify-content: center;
 
   width: 100%;
-  height: 100vh;
-  padding: 0 10px 0 10px;
+  min-height: 100vh;
+  /* padding: 0 10px 0 10px; */
 }
 section:nth-child(even) {
   background: var(--color-background);
@@ -235,11 +236,12 @@ section::before {
 /* home */
 #home {
   /* display: flex; */
-  padding: 30px 0 0 0;
+  padding: 130px 0 0 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* height: 90vh; */
 }
 
 #home img {
@@ -250,8 +252,7 @@ section::before {
   /* background: black; */
   /* width: 60%; */
   /* width: 500px; */
-  height: 400px;
-  /* padding-right: 500px; */
+  height: 500px;
 }
 .main-laptop {
   width: 600px;
@@ -354,7 +355,7 @@ section::before {
   list-style: none;
 }
 
-.btn-portfolio {
+#home .btn-portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,4 +376,43 @@ section::before {
   border: rgba(150, 150, 150, 0.7) 5px solid;
 
   color: white;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .header {
+  display: flex;
+  position: relative;
+  top: -5px;
+  /* background-color: gray; */
+}
+#about .description-container {
+  width: 130px;
+  /* height: 80px; */
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* background-color: gray; */
+}
+#about .description {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -5px;
+}
+#about .line-through {
+  background-color: var(--color-yellow);
+  width: 100%;
+  height: 5px;
+  border-radius: 8px;
+}
+#about .title {
+  /* display: block; */
+  position: relative;
+  margin-left: 10px;
+  top: -10px;
+  font-size: 20px;
 }
