@@ -453,3 +453,26 @@ section::before {
 #contact .description-container {
   width: 130px;
 }
+
+#contact .body {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-container {
+  display: flex;
+  margin: 20px;
+}
+
+#contact .bar {
+  width: 2px;
+  height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: var(--color-yellow);
+}
+
+#contact .info {
+  margin-top: auto;
+  margin-bottom: auto;
+}
