@@ -435,6 +435,13 @@ section::before {
   width: 65px;
 }
 
+#experience .work .job-position {
+  display: flex;
+  justify-content: space-between;
+}
+#experience .work ul {
+  padding: 20px;
+}
 #portfolio {
   display: flex;
   justify-content: center;
