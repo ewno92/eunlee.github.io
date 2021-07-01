@@ -280,6 +280,9 @@ section::before {
   width: 25px;
   height: 25px;
 }
+.btn-ripple:hover {
+  background: var(--color-yellow);
+}
 .header {
   display: flex;
   position: relative;
@@ -502,6 +505,7 @@ section::before {
 }
 
 #portfolio .banner {
+  display: flex;
   position: relative;
   display: inline-block;
   width: 200px;
