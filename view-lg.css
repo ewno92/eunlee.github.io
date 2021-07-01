@@ -494,6 +494,68 @@ section::before {
   width: 115px;
 }
 
+#portfolio .body {
+  background-color: gray;
+  width: 300px;
+  height: 500px;
+}
+
+#portfolio .banner {
+  position: relative;
+  display: inline-block;
+  object-fit: cover;
+}
+#portfolio .banner img {
+  width: 100%;
+}
+#portfolio .banner .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+#portfolio .banner::before,
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+#portfolio .banner::before {
+  border-top: 3px solid var(--color-yellow);
+  border-bottom: 3px solid var(--color-yellow);
+  width: 0;
+}
+#portfolio .banner::after {
+  border-left: 3px solid var(--color-yellow);
+  border-right: 3px solid var(--color-yellow);
+  height: 0;
+}
+
+#portfolio .banner:hover::before {
+  width: 95%;
+  height: 95%;
+}
+#portfolio .banner:hover::after {
+  width: 95%;
+  height: 95%;
+}
+#portfolio .banner:hover .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
 #contact {
   display: flex;
   justify-content: center;
