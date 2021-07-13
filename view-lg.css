@@ -509,11 +509,13 @@ section::before {
   position: relative;
   display: inline-block;
   width: 200px;
+  height: 133.59px;
   object-fit: cover;
   margin: 10px;
 }
 #portfolio .banner img {
   width: 100%;
+  height: 133.59px;
 }
 #portfolio .banner .text {
   position: absolute;
@@ -532,9 +534,9 @@ section::before {
   top: 50%;
   left: 50%;
   width: 95%;
-  height: 95%;
+  height: 93%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 #portfolio .banner::before {
   border-top: 3px solid var(--color-yellow);
@@ -548,12 +550,14 @@ section::before {
 }
 
 #portfolio .banner:hover::before {
-  width: 95%;
-  height: 95%;
+  width: 98%;
+  height: 93%;
+  z-index: 2;
 }
 #portfolio .banner:hover::after {
   width: 95%;
   height: 95%;
+  z-index: 2;
 }
 #portfolio .banner:hover .text {
   display: flex;
@@ -561,6 +565,7 @@ section::before {
   align-items: center;
   height: 100%;
   background-color: rgb(255, 255, 255, 0.6);
+  z-index: 1;
 }
 
 #contact {
