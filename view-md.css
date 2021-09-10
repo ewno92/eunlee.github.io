@@ -1,6 +1,7 @@
 @media (max-width: 800px) {
   .menuicon-wrap {
     display: block;
+    top: 10px;
   }
   .logo-content .logo-title {
     font-size: 1.6rem;
@@ -16,6 +17,11 @@
     flex-direction: column;
     padding: 50px 0 0 0;
   }
+
+  #home .home-container {
+    display: flex;
+    flex-direction: column;
+  }
   .main-laptop {
     width: 450px;
   }
@@ -28,7 +34,7 @@
     left: 100px;
   }
   .home-title {
-    margin-top: 40px;
+    margin-top: -100px;
     display: flex;
     align-items: center;
   }

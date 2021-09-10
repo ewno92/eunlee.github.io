@@ -1,6 +1,10 @@
 @media (max-width: 540px) {
+  section {
+    padding-top: 55px;
+  }
+
   .btn-ripple {
-    margin-top: 25px;
+    margin-top: 28px;
     margin-bottom: 30px;
     width: 100%;
     background: none;
@@ -12,19 +16,17 @@
   }
 
   .menuicon-wrap {
-    display: flex;
-    /* display: absolute; */
     margin: 0;
-    top: 25px;
-    right: 5px;
+    top: 23px;
+    right: 8px;
   }
   nav input[id="menuicon"] {
     display: none;
   }
   nav input[id="menuicon"] + label {
     display: block;
-    width: 21px;
-    height: 15px;
+    width: 28px;
+    height: 20px;
     position: relative;
     cursor: pointer;
   }
@@ -103,5 +105,12 @@
     width: 300px;
     height: 60px;
     margin-top: 20px;
+  }
+
+  #portfolio .body {
+    justify-content: center;
+  }
+  #contact .body {
+    padding-bottom: 150px;
   }
 }

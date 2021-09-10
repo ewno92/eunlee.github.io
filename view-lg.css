@@ -64,16 +64,19 @@ nav {
 .menuicon-wrap {
   position: absolute;
   right: 0;
-  margin: 10px 10px 0 0;
+  margin: 10px 10px 0px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 35px;
   display: none;
-  /* padding: 5px; */
-  /* background: gray; */
 }
+
+.menuicon-wrap li a {
+  color: var(--color-gray);
+}
+
 nav input[id="menuicon"] {
   display: none;
 }
@@ -120,8 +123,6 @@ nav .nav-menu ul li {
   color: white;
   transition: 0.5s;
   width: 100%;
-  /* padding: 0 10%; */
-  /* width: 100%; */
 }
 nav .nav-menu ul li a {
   display: flex;
@@ -219,7 +220,7 @@ section {
 
   width: 100%;
   min-height: 100vh;
-  padding: 50px 20px 50px 20px;
+  padding: 100px 20px 50px 20px;
   /* padding: 0 10px 0 10px; */
 }
 section .body {
@@ -528,7 +529,6 @@ section::before {
   align-items: center;
 }
 #experience .body {
-  padding-top: 30px;
 }
 #experience .description-container {
   width: 65px;
