@@ -219,7 +219,7 @@ section {
 
   width: 100%;
   min-height: 100vh;
-  padding: 100px 20px 50px 20px;
+  padding: 50px 20px 50px 20px;
   /* padding: 0 10px 0 10px; */
 }
 section .body {
@@ -311,13 +311,12 @@ section::before {
   position: relative;
   margin-left: 10px;
   top: -14px;
-  /* font-size: 20px; */
   font-weight: 600;
 }
 
 /* home */
 #home {
-  padding: 130px 0 0 0;
+  padding: 150px 0 0 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -419,7 +418,6 @@ section::before {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  padding-left: 50px;
 }
 #home .home-title ul li {
   color: black;
@@ -446,6 +444,9 @@ section::before {
   font-weight: 600;
   align-self: center;
   margin-top: 20px;
+}
+
+#home .btn-portfolio {
   position: relative;
 }
 
@@ -554,21 +555,20 @@ section::before {
   /* background-color: gray; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #portfolio .banner {
   display: flex;
   position: relative;
   display: inline-block;
-  width: 200px;
-  height: 133.59px;
+  width: 250px;
   object-fit: cover;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 #portfolio .banner img {
   width: 100%;
-  height: 133.59px;
+  /* height: 133.59px; */
 }
 #portfolio .banner .text {
   position: absolute;
