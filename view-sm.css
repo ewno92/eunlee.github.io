@@ -1,6 +1,7 @@
 @media (max-width: 540px) {
   section {
     padding-top: 55px;
+    padding-bottom: 0px;
   }
 
   .btn-ripple {
