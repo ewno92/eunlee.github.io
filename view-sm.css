@@ -5,7 +5,7 @@
 
   .btn-ripple {
     margin-top: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 100%;
     background: none;
     border: none;
@@ -112,5 +112,9 @@
   }
   #contact .body {
     padding-bottom: 150px;
+  }
+
+  #contact .header {
+    margin-top: 50px;
   }
 }
