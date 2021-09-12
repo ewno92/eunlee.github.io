@@ -430,7 +430,10 @@ section::before {
   color: white;
   list-style: none;
 }
-
+#home a {
+  display: flex;
+  justify-content: center;
+}
 #home .btn-portfolio {
   display: flex;
   justify-content: center;
@@ -620,6 +623,8 @@ section::before {
   height: 100%;
   background-color: rgb(255, 255, 255, 0.6);
   z-index: 1;
+  color: Black;
+  font-weight: 600;
 }
 
 #contact {
