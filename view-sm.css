@@ -111,6 +111,12 @@
   #portfolio .body {
     justify-content: center;
   }
+
+  #portfolio .body .banner {
+    width: 100%;
+    background-color: black;
+  }
+
   #contact .body {
     padding-bottom: 150px;
   }
