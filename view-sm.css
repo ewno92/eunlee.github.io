@@ -71,16 +71,11 @@
   }
 
   #home .img-container {
-    /* background: gray; */
     width: 280px;
-    /* top: 150px; */
     height: 240px;
-    /* background-color: gray; */
-    /* display: none; */
   }
   .main-laptop {
     width: 250px;
-    /* top: 0px; */
   }
   .main-tablet {
     width: 90px;
@@ -94,8 +89,6 @@
   }
   #home .home-title {
     margin-top: -90px;
-    /* display: flex; */
-    /* align-items: center; */
   }
   .btn-portfolio {
     margin-top: 15px;
@@ -117,7 +110,6 @@
 
   #portfolio .body .banner {
     width: 100%;
-    background-color: black;
   }
 
   #contact .body {
