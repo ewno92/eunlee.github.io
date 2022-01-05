@@ -29,13 +29,11 @@ nav {
   height: 80px;
   text-align: center;
   animation: nav-load 0.7s ease-in;
-  /* animation: fade-out 1s; */
 }
 
 @keyframes nav-load {
   0% {
     transform: translateY(-100%);
-    /* opacity: 100%; */
     opacity: 0;
   }
   80% {
@@ -44,23 +42,16 @@ nav {
   100% {
     transform: translateY(0);
     opacity: 1;
-    /* background: blacks; */
   }
 }
 .logo-content .logo-title {
   font-family: "Raleway", sans-serif;
-  /* font-size: 1.6rem; */
   font-size: 3.2rem;
   color: var(--color-yellow);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 900;
 }
-/* .logo-content .name {
-  position: absolute;
-} */
-
-/* mobile menu */
 .menuicon-wrap {
   position: absolute;
   right: 0;
@@ -138,9 +129,6 @@ nav .nav-menu ul li a {
 }
 
 nav .nav-menu ul a:hover {
-  /* filter: blur(2px); */
-
-  /* filter: none; */
   font-weight: 800;
   color: rgba(235, 177, 19, 0.9);
   border-bottom: 4px solid rgba(235, 177, 19, 0.9);
@@ -221,10 +209,8 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 100px 20px 50px 20px;
-  /* padding: 0 10px 0 10px; */
 }
 section .body {
-  /* background-color: yellow; */
   width: 100%;
   max-width: 800px;
 }
@@ -259,7 +245,6 @@ section::before {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
-  /* display: block; */
 }
 @keyframes ripple {
   0% {
@@ -291,7 +276,6 @@ section::before {
 }
 .description-container {
   width: 70px;
-  /* height: 80px; */
   align-items: center;
   text-align: center;
   position: relative;
@@ -339,8 +323,6 @@ section::before {
 .main-laptop {
   width: 600px;
   position: relative;
-  /* left: 50px; */
-  /* margin: 1% 0 0 20%; */
   animation: laptop-animation 2s ease-out;
   top: 30px;
   left: 20px;
@@ -366,7 +348,6 @@ section::before {
 .main-tablet {
   width: 200px;
   position: relative;
-  /* margin: 5% 0 0 20%; */
   top: -190px;
 
   animation: tablet-animation 3s ease-out;
@@ -394,7 +375,6 @@ section::before {
   position: relative;
   top: -380px;
   left: 150px;
-  /* margin: 0% 0 0 32%; */
   animation: phone-animation 2s ease-out;
 }
 
@@ -555,7 +535,6 @@ section::before {
 }
 
 #portfolio .body {
-  /* background-color: gray; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -571,7 +550,6 @@ section::before {
 }
 #portfolio .banner img {
   width: 100%;
-  /* height: 133.59px; */
   height: 100%;
 }
 #portfolio .banner .text {
