@@ -1,4 +1,7 @@
-@media (max-width: 800px) {
+@media (max-width: 980px) {
+  div[class="sidebar"] {
+    right: -980px;
+  }
   .menuicon-wrap {
     display: block;
     top: 10px;

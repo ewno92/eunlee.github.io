@@ -1,4 +1,7 @@
 @media (max-width: 560px) {
+  div[class="sidebar"] {
+    right: -560px;
+  }
   section {
     padding-top: 55px;
     padding-bottom: 0px;
